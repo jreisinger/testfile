@@ -17,3 +17,5 @@ func main() {
     	// do something with testFile ...
 }
 ```
+
+If you don't `Remove()` the test file you can find it in [TempDir](https://golang.org/pkg/os/#TempDir) (usually `/tmp` on Unix systems) starting with `testfile`.
