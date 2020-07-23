@@ -5,9 +5,12 @@ import (
 	"testing"
 )
 
+const content = `line1
+line2
+line3`
+
 func TestNew(t *testing.T) {
 	// Create a new TestFile.
-	content := "line1\nline2\nline3"
 	file := New(content)
 	defer file.Remove()
 
