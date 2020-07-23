@@ -4,17 +4,17 @@
 import "github.com/jreisinger/testfile"
 
 func main() {
-    	content = []byte("line1\nline2\n")
-    	tf := testfile.New(content)
-		defer tf.Remove()
+        content = []byte("line1\nline2\n")
+        tf := testfile.New(content)
+        defer tf.Remove()
 
-		testFile, err := os.Open(tf.Name)
-		if err != nil {
-			log.Fatal(err)
-		}
-		defer testFile.Close()
-    
-    	// do something with testFile ...
+        testFile, err := os.Open(tf.Name)
+        if err != nil {
+            log.Fatal(err)
+        }
+        defer testFile.Close()
+
+        // do something with testFile ...
 }
 ```
 
