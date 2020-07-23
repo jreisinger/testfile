@@ -6,7 +6,7 @@ import (
 	"os"
 )
 
-// TestFile represent a temporary file to be used for testing purposes.
+// TestFile represents a temporary file to be used for testing purposes.
 type TestFile struct {
 	Name string
 }
