@@ -4,8 +4,8 @@
 import "github.com/jreisinger/testfile"
 
 func main() {
-    content = []byte("line1\nline2\n")
-    tf := testfile.New(content)
+    	content = []byte("line1\nline2\n")
+    	tf := testfile.New(content)
 
 	testFile, err := os.Open(tf.Name)
 	if err != nil {
@@ -14,6 +14,6 @@ func main() {
 	defer testFile.Close()
 	defer tf.Remove()
     
-    // do something with testFile ...
+    	// do something with testFile ...
 }
 ```
