@@ -4,7 +4,7 @@
 import "github.com/jreisinger/testfile"
 
 func main() {
-        content = []byte("line1\nline2\n")
+        content = "line1\nline2\n"
         tf := testfile.New(content)
         defer tf.Remove()
 

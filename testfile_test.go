@@ -7,7 +7,7 @@ import (
 
 func TestNew(t *testing.T) {
 	// Create a new TestFile.
-	content := []byte("line1\nline2\nline3")
+	content := "line1\nline2\nline3"
 	file := New(content)
 	defer file.Remove()
 
@@ -19,7 +19,7 @@ func TestNew(t *testing.T) {
 	if err != nil {
 		t.Errorf("can't open test file %s: %v", file.Name, err)
 	}
-	fi, err := f.Stat()	
+	fi, err := f.Stat()
 	if err != nil {
 		t.Errorf("can't stat test file %s: %v", file.Name, err)
 	}

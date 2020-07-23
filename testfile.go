@@ -12,7 +12,7 @@ type TestFile struct {
 }
 
 // New creates a TestFile with the content.
-func New(content []byte) *TestFile {
+func New(content string) *TestFile {
 	testfile, err := ioutil.TempFile("", "testfile")
 	if err != nil {
 		log.Fatal(err)
