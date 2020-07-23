@@ -1,8 +1,7 @@
-`tesfile` module creates (and optionally removes) a temporary file with a give
-content 
+`tesfile` module creates (and optionally removes) a temporary file with a given content:
 
 ```
-import "github.com/jreisinger/testfile
+import "github.com/jreisinger/testfile"
 
 func main() {
     content = []byte("line1\nline2\n")
