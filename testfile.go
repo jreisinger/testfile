@@ -28,7 +28,7 @@ func New(content string) *TestFile {
 	return &TestFile{Name: testfile.Name()}
 }
 
-// Remove remove a TestFile from filesystem.
+// Remove removes a TestFile from filesystem.
 func (f *TestFile) Remove() {
 	if err := os.Remove(f.Name); err != nil {
 		log.Fatal(err)
